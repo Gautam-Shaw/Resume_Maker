@@ -11,7 +11,7 @@ const Dashboard = () => {
     if (!token) {
       navigate("/login");
     } else {
-      fetch("http://localhost:5000/api/users/profile", {
+      fetch("https://resume-maker-backend-9ygy.onrender.com", {
         headers: { Authorization: `Bearer ${token}` },
       })
         .then((res) => res.json())
